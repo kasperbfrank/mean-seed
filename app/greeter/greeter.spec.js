@@ -1,13 +1,12 @@
-describe('home section', function () {
-
-    // beforeEach(module('myApp.home'));
+describe('Greeter', function() {
 
     beforeEach(function () {
-        module('myApp');
-        module('myApp.home');
+          // code that executes before every test
+          module('myApp');
+          module('myApp.greeter');
     });
 
-    describe('Home Controller', function () {
+    describe('Greeter Controller', function() {
 
         var $controller;
         var greetingsservice;
@@ -18,16 +17,20 @@ describe('home section', function () {
             greetingsservice = _greetingsservice_;
         }));
 
-        it('should provide simple access to its data', function () {
+        it('should provide random greeting', function () {
+            // SETUP
             var scope = {};
-            var vm = $controller('Home', {$scope: scope, greetingsservice: greetingsservice});
+            var vm = $controller('Greeter', {$scope: scope, greetingsservice: greetingsservice});
 
+            // EXECUTE
+
+            // TEST RESULTS
             expect(vm).toBeDefined();
-            expect(vm.name).toBeDefined();
             expect(vm.greeting).toBeDefined();
 
-            expect(vm.name).toBe('Kasper Bruus Frank');
-            expect(vm.greeting).toBe('Welcome!');
+            expect(vm.greeting).toEqual('What\'s up?');
         });
+
+
     });
 });

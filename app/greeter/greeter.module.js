@@ -2,5 +2,5 @@
     'use strict';
 
     angular
-        .module('myApp.home', []);
+        .module('myApp.greeter', []);
 })();

@@ -1,8 +1,7 @@
 (function () {
     angular.module('myApp', [
-        'ui.router',
+        'myApp.core',
         'myApp.home',
-        'myApp.numbers'
+        'myApp.greeter'
     ]);
 })();
-

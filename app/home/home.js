@@ -1,16 +1,22 @@
-(function () {
+(function() {
+    'use strict';
 
-    angular.module('myApp.home')
-        .controller('HomeCtrl',  HomeController);
+    angular
+        .module('myApp.home')
+        .controller('Home', Home);
 
-    HomeController.$inject = [];
+    Home.$inject = ['greetingsservice'];
 
-    function HomeController() {
+    /* @ngInject */
+    function Home(greetingsservice) {
+        var vm = this;
+        vm.greeting;
+        vm.name = 'Kasper Bruus Frank';
 
-        vm = this;
+        activate();
 
-        this.name = 'Kaiser Sose';
-        this.number = '867-5309';
-
-    };
+        function activate() {
+            vm.greeting = greetingsservice.getFirst();
+        }
+    }
 })();

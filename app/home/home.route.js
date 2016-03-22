@@ -5,11 +5,10 @@
                 url: '/home',
                 views: {
                     "main": {
-                        controller: 'HomeCtrl as homeCtrl',
-                        templateUrl: 'home/home.tpl.html'
+                        controller: 'Home as vm',
+                        templateUrl: 'home/home.html'
                     }
-                },
-                data: {pageTitle: 'Home'}
+                }
             });
         }])
 })();

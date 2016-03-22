@@ -8,9 +8,11 @@ module.exports = function (config) {
             'app/bower_components/angular-ui-router/release/angular-ui-router.js',
             'app/bower_components/angular-mocks/angular-mocks.js',
             'app/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
-            'app/**/*module.js',
-            'app/common/**/*.js',
+            'app/app.module.js',
+            'app/**/*.module.js',
+            'app/core/**/*.js',
             'app/home/**/*.js',
+            'app/greeter/**/*.js',
             'app/*.js'
         ],
 
