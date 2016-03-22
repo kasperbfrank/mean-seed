@@ -6,11 +6,11 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-  	"angular": "~1.4.0",
-  	"angular-bootstrap": "~0.13",
-    "angular-mocks": "~1.4.0",
-  	"angular-ui-router": "~0.2",
-    "bootstrap": "~3.1",
-    "fontawesome": "~4.2.0"
+  	"angular": "^1.4.0",
+  	"angular-bootstrap": "^0.13",
+    "angular-mocks": "^1.4.0",
+  	"angular-ui-router": "^0.2",
+    "bootstrap": "^3.1",
+    "fontawesome": "^4.2.0"
   }
 }
