@@ -1,5 +1,5 @@
 /* app css stylesheet */
-
+/* line 3, ../base.scss */
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -7,24 +7,47 @@
   padding: 0 0 0.5em;
 }
 
+/* line 10, ../base.scss */
 .menu:before {
   content: "[";
 }
 
+/* line 14, ../base.scss */
 .menu:after {
   content: "]";
 }
 
+/* line 18, ../base.scss */
 .menu > li {
   display: inline;
 }
 
+/* line 22, ../base.scss */
 .menu > li:before {
   content: "|";
   padding-right: 0.3em;
 }
 
+/* line 27, ../base.scss */
 .menu > li:nth-child(1):before {
   content: "";
   padding: 0;
+}
+
+/* line 1, ../home/home.scss */
+.baz {
+  color: #000;
+}
+/* line 3, ../home/home.scss */
+.baz #xyz {
+  color: #FFF;
+}
+
+/* line 1, ../greeter/greeter.scss */
+.foo {
+  color: #000;
+}
+/* line 3, ../greeter/greeter.scss */
+.foo #bar {
+  color: #FFF;
 }
