@@ -2,7 +2,6 @@ describe('greetingsservice', function() {
     var greetingsservice;
 
     beforeEach(function () {
-          // code that executes before every test
           module('myApp.core')
     });
 
