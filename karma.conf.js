@@ -4,20 +4,21 @@ module.exports = function (config) {
         basePath: './',
 
         files: [
-            'app/bower_components/angular/angular.js',
-            'app/bower_components/angular-ui-router/release/angular-ui-router.js',
-            'app/bower_components/angular-mocks/angular-mocks.js',
-            'app/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
-            'app/app.module.js',
-            'app/**/*.module.js',
-            'app/core/**/*.js',
-            'app/home/**/*.js',
-            'app/greeter/**/*.js',
-            'app/*.js'
+            'public/vendor/angular/angular.js',
+            'public/vendor/angular-ui-router/release/angular-ui-router.js',
+            'public/vendor/angular-resource/angular-resource.js',
+            'public/vendor/angular-mocks/angular-mocks.js',
+            'public/vendor/angular-bootstrap/ui-bootstrap-tpls.min.js',
+            'public/app/app.module.js',
+            'public/app/**/*.module.js',
+            'public/app/core/**/*.js',
+            'public/app/home/**/*.js',
+            'public/app/greeter/**/*.js',
+            'public/app/*.js'
         ],
 
         exclude: [
-            'app/**/*.scenario.js'
+            'public/app/**/*.scenario.js'
         ],
 
         autoWatch: true,
