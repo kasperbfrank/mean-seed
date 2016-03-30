@@ -9,7 +9,6 @@
 
     /* @ngInject */
     function greetingsData($resource) {
-        var greetings = ['Welcome!', 'What\'s up?'];
 
         var service = $resource('/api/greetings/:id', {id:'@id'}, {
             update: {method:'PUT',isArray:false}
